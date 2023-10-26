@@ -1,6 +1,7 @@
 import { defineUserConfig, defaultTheme } from "vuepress";
 
 export default defineUserConfig({
+  base: "/blog/",
   lang: "zh-CN",
   title: "Dai Blog",
   description: "这是我的 vuepress blog",
