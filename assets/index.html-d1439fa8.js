@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"随便写点什么吧","slug":"随便写点什么吧","link":"#随便写点什么吧","children":[]}],"git":{"updatedTime":1698311200000,"contributors":[{"name":"Sobcat","email":"771954909@qq.com","commits":3}]},"filePathRelative":"README.md"}');export{e as data};

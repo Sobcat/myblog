@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.67">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="https://v2.vuepress.vuejs.org/images/hero.png"><title>Dai Blog</title><meta name="description" content="这是我的 vuepress blog">
+    <link rel="preload" href="/myblog/assets/style-18083f4b.css" as="style"><link rel="stylesheet" href="/myblog/assets/style-18083f4b.css">
+    <link rel="modulepreload" href="/myblog/assets/app-b558cd10.js"><link rel="modulepreload" href="/myblog/assets/404.html-85914bdf.js"><link rel="modulepreload" href="/myblog/assets/404.html-f9875e7b.js"><link rel="prefetch" href="/myblog/assets/index.html-d1439fa8.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-6c92fb87.js" as="script"><link rel="prefetch" href="/myblog/assets/test.html-cd441ee0.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-8a032d78.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-1f92c097.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-ebded37f.js" as="script"><link rel="prefetch" href="/myblog/assets/test.html-de6cebf1.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-be2c7e8d.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>That&#39;s a Four-Oh-Four.</blockquote><a href="/myblog/" class="">Take me home</a></div></main></div><!----><!--]--></div>
+    <script type="module" src="/myblog/assets/app-b558cd10.js" defer></script>
+  </body>
+</html>
