@@ -24,20 +24,18 @@ export default defineUserConfig({
     sidebar: [
       {
         text: "JavaScript",
-        link: '/js/',
+        link: "/js/",
         collapsible: true,
         children: [
-          { text: 'js', link: "/js" },
-          { text: 'text', link: "/js/test" }
-        ]
+          { text: "js", link: "/js" },
+          { text: "text", link: "/js/test" },
+        ],
       },
       {
         text: "Vue",
-        link: '/vue/',
+        link: "/vue/",
         collapsible: true,
-         children: [
-          { text: 'vue', link: '/vue' }
-         ]
+        children: [{ text: "vue", link: "/vue" }],
       },
     ],
     // sidebarDepth: 2
