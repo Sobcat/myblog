@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.67">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="https://v2.vuepress.vuejs.org/images/hero.png"><title>Dai Blog</title><meta name="description" content="这是我的 vuepress blog">
+    <link rel="preload" href="/myblog/assets/style-18083f4b.css" as="style"><link rel="stylesheet" href="/myblog/assets/style-18083f4b.css">
+    <link rel="modulepreload" href="/myblog/assets/app-1c005971.js"><link rel="modulepreload" href="/myblog/assets/404.html-c49e7446.js"><link rel="modulepreload" href="/myblog/assets/404.html-f9875e7b.js"><link rel="prefetch" href="/myblog/assets/index.html-b64ae299.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-b80f4336.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-80092b57.js" as="script"><link rel="prefetch" href="/myblog/assets/test.html-cd441ee0.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-25e59610.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-dc15a6a8.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-7a675413.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-b7dbda43.js" as="script"><link rel="prefetch" href="/myblog/assets/test.html-a3d529a1.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-0fe31f06.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>How did we get here?</blockquote><a href="/myblog/" class="">Take me home</a></div></main></div><!----><!--]--></div>
+    <script type="module" src="/myblog/assets/app-1c005971.js" defer></script>
+  </body>
+</html>
