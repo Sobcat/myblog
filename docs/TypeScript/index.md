@@ -1,3 +1,3 @@
 ## TypeScript 使用
 
-TypeScript 是一个超集
+TypeScript 是 JavaScript 的一个超集
