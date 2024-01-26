@@ -14,24 +14,32 @@ export default defineUserConfig({
   // dest: `docs/dist`,
   // public: `docs/public`,
   theme: defaultTheme({
+    repo: "https://github.com/Sobcat",
+    themePlugins: {
+      backToTop: true,
+    },
     navbar: [
       // NavbarItem
       {
-        text: "首页",
+        text: "HOME",
         link: "/",
       },
       {
+        text: "前端",
+        link: "/front/",
+      },
+      {
         text: "杂余记录",
-        link: "/",
+        link: "/other/",
         children: [{ text: "vue", link: "/vue" }],
       },
       {
         text: "JavaScript",
         link: "/js/",
-        children: [
-          { text: "js", link: "/js" },
-          { text: "text", link: "/js/test" },
-        ],
+        // children: [
+        //   { text: "js", link: "/js" },
+        //   { text: "text", link: "/js/test" },
+        // ],
       },
       {
         text: "Vue",
@@ -40,21 +48,21 @@ export default defineUserConfig({
       },
       {
         text: "TypeScript",
-        link: "/vue/",
-        children: [{ text: "vue", link: "/vue" }],
-      },
-      {
-        text: "低代码",
-        link: "/vue/",
+        link: "/TypeScript/",
         children: [{ text: "vue", link: "/vue" }],
       },
       {
         text: "移动端",
-        link: "/vue/",
+        link: "/mobile/",
         children: [
           { text: "小程序", link: "/vue" },
           { text: "uniapp", link: "/vue" },
         ],
+      },
+      {
+        text: "低代码",
+        link: "/lowCode/",
+        children: [{ text: "vue", link: "/vue" }],
       },
     ],
     // sidebar: [
