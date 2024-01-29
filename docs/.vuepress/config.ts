@@ -1,4 +1,5 @@
-import { defineUserConfig, defaultTheme } from "vuepress";
+import { defineUserConfig } from "vuepress";
+import { defaultTheme } from "@vuepress/theme-default";
 
 export default defineUserConfig({
   base: "/myblog/",
