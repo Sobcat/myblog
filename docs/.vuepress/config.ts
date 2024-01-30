@@ -32,7 +32,12 @@ export default defineUserConfig({
       {
         text: "杂余记录",
         link: "/other/",
-        children: [{ text: "vue", link: "/vue" }],
+        // children: [{ text: "vue", link: "/vue" }],
+      },
+      {
+        text: "Wheel",
+        link: "/wheel/",
+        // children: [{ text: "vue", link: "/vue" }],
       },
       {
         text: "JavaScript",
@@ -66,23 +71,22 @@ export default defineUserConfig({
         children: [{ text: "vue", link: "/vue" }],
       },
     ],
-    // sidebar: [
-    //   {
-    //     text: "JavaScript",
-    //     link: "/js/",
-    //     collapsible: true,
-    //     children: [
-    //       { text: "js", link: "/js" },
-    //       { text: "text", link: "/js/test" },
-    //     ],
-    //   },
-    //   {
-    //     text: "Vue",
-    //     link: "/vue/",
-    //     collapsible: true,
-    //     children: [{ text: "vue", link: "/vue" }],
-    //   },
-    // ],
+    sidebar: {
+      "/js/": [
+        {
+          text: "JavaScript",
+          children: [
+            { text: "es6", link: "/js/es6" },
+            { text: "text", link: "/js/test" },
+          ],
+        },
+        {
+          text: "Vue",
+          // collapsible: true,
+          // children: [{ text: "vue", link: "/vue" }],
+        },
+      ],
+    },
     // sidebarDepth: 2
   }),
   port: 8787,
