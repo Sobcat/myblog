@@ -1,3 +1,4 @@
+import { tocPlugin } from "@vuepress/plugin-toc";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 
@@ -13,7 +14,11 @@ export default defineUserConfig({
     ],
   ],
   // dest: `docs/dist`,
-  // public: `docs/public`,
+  plugins: [
+    tocPlugin({
+      // 配置项
+    }),
+  ],
   theme: defaultTheme({
     repo: "https://github.com/Sobcat",
     themePlugins: {
@@ -75,10 +80,7 @@ export default defineUserConfig({
       "/js/": [
         {
           text: "JavaScript",
-          children: [
-            { text: "es6", link: "/js/es6" },
-            { text: "text", link: "/js/test" },
-          ],
+          children: ["/js/es6.md", { text: "text", link: "/js/test" }],
         },
         {
           text: "Vue",
