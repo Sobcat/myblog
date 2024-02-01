@@ -1,6 +1,8 @@
-import { tocPlugin } from "@vuepress/plugin-toc";
+// import { viteBundler } from "@vuepress/bundler-vite";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
+// import { tocPlugin } from "@vuepress/plugin-toc";
+// import themeSidebar from "vuepress-theme-sidebar";
 
 export default defineUserConfig({
   base: "/myblog/",
@@ -14,12 +16,14 @@ export default defineUserConfig({
     ],
   ],
   // dest: `docs/dist`,
-  plugins: [
-    tocPlugin({
-      // 配置项
-    }),
-  ],
+  // plugins: [
+  //   tocPlugin({
+  //     // 配置项
+  //   }),
+  // ],
+  // bundler: viteBundler(),
   theme: defaultTheme({
+    // sidebarType: "right",
     repo: "https://github.com/Sobcat",
     themePlugins: {
       backToTop: true,
@@ -48,7 +52,7 @@ export default defineUserConfig({
         text: "JavaScript",
         link: "/js/",
         // children: [
-        //   { text: "js", link: "/js" },
+        //   { text: "es6", link: "/js/es6" },
         //   { text: "text", link: "/js/test" },
         // ],
       },
@@ -80,16 +84,11 @@ export default defineUserConfig({
       "/js/": [
         {
           text: "JavaScript",
-          children: ["/js/es6.md", { text: "text", link: "/js/test" }],
-        },
-        {
-          text: "Vue",
-          // collapsible: true,
-          // children: [{ text: "vue", link: "/vue" }],
+          children: ["/js/es6.md", "/js/test.md"],
         },
       ],
     },
-    // sidebarDepth: 2
+    // sidebarDepth: 0,
   }),
   port: 8787,
 });
