@@ -2,7 +2,6 @@
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 // import { tocPlugin } from "@vuepress/plugin-toc";
-// import themeSidebar from "vuepress-theme-sidebar";
 
 export default defineUserConfig({
   base: "/myblog/",
@@ -23,7 +22,6 @@ export default defineUserConfig({
   // ],
   // bundler: viteBundler(),
   theme: defaultTheme({
-    // sidebarType: "right",
     repo: "https://github.com/Sobcat",
     themePlugins: {
       backToTop: true,
