@@ -56,7 +56,6 @@ export default defineUserConfig({
       {
         text: "TypeScript",
         link: "/TypeScript/",
-        children: [{ text: "vue", link: "/vue" }],
       },
       {
         text: "移动端",
@@ -79,8 +78,20 @@ export default defineUserConfig({
           children: ["/js/es6.md", "/js/test.md"],
         },
       ],
+      "/TypeScript/": [
+        {
+          text: "关于 TypeScript",
+          link: "/TypeScript/",
+          // children: ["/TypeScript/ts-base.md"],
+        },
+        {
+          text: "开始学习 TypeScript",
+          // link: "/TypeScript/ts-base.md",
+          children: ["/TypeScript/ts-base.md"],
+        },
+      ],
     },
-    // sidebarDepth: 0,
+    sidebarDepth: 1,
   }),
   port: 8787,
 });

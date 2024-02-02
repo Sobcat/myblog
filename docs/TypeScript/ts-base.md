@@ -1,4 +1,8 @@
-# ES6
+# TypeScript 基础
+
+## 什么是 TypeScript？
+
+### 111
 
 ## let
 
