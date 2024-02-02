@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.67">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="https://v2.vuepress.vuejs.org/images/hero.png"><title>Dai Blog</title><meta name="description" content="这是我的 vuepress blog">
+    <link rel="preload" href="/myblog/assets/style-18083f4b.css" as="style"><link rel="stylesheet" href="/myblog/assets/style-18083f4b.css">
+    <link rel="modulepreload" href="/myblog/assets/app-56f4c4a6.js"><link rel="modulepreload" href="/myblog/assets/404.html-42be8111.js"><link rel="modulepreload" href="/myblog/assets/404.html-f9875e7b.js"><link rel="prefetch" href="/myblog/assets/index.html-9bd56519.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-714473ef.js" as="script"><link rel="prefetch" href="/myblog/assets/ts-base.html-a275f274.js" as="script"><link rel="prefetch" href="/myblog/assets/es6.html-53c39787.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-80092b57.js" as="script"><link rel="prefetch" href="/myblog/assets/test.html-73166402.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-08399306.js" as="script"><link rel="prefetch" href="/myblog/assets/vite.html-041d795e.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-c9b8b5ac.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-68e33ae9.js" as="script"><link rel="prefetch" href="/myblog/assets/ts-base.html-8bb53360.js" as="script"><link rel="prefetch" href="/myblog/assets/es6.html-194c3a03.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-15498767.js" as="script"><link rel="prefetch" href="/myblog/assets/test.html-218d2d37.js" as="script"><link rel="prefetch" href="/myblog/assets/index.html-a048d5d5.js" as="script"><link rel="prefetch" href="/myblog/assets/vite.html-48988853.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>How did we get here?</blockquote><a href="/myblog/" class="">Take me home</a></div></main></div><!----><!--]--></div>
+    <script type="module" src="/myblog/assets/app-56f4c4a6.js" defer></script>
+  </body>
+</html>

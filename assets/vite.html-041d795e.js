@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0a01295a","path":"/vue/vite.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"vite 使用","slug":"vite-使用","link":"#vite-使用","children":[]}],"git":{"updatedTime":1702608901000,"contributors":[{"name":"Sobcat","email":"771954909@qq.com","commits":6}]},"filePathRelative":"vue/vite.md"}');export{e as data};
