@@ -41,20 +41,14 @@ export default defineUserConfig({
       {
         text: "杂余记录",
         link: "/other/",
-        // children: [{ text: "vue", link: "/vue" }],
       },
       {
         text: "Wheel",
         link: "/wheel/",
-        // children: [{ text: "vue", link: "/vue" }],
       },
       {
         text: "JavaScript",
         link: "/js/",
-        // children: [
-        //   { text: "es6", link: "/js/es6" },
-        //   { text: "text", link: "/js/test" },
-        // ],
       },
       {
         text: "Vue",
